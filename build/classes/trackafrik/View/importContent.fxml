@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="803.0" styleClass="anchorpane-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trackafrik.controller.ImportContentController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="469.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <javafx.scene.control.TableView fx:id="table_import" layoutX="38.0" layoutY="34.0" prefHeight="462.0" prefWidth="237.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="29.0">
+               <columns>
+                  <TableColumn fx:id="colummcode" prefWidth="104.0" text="code" />
+                  <TableColumn fx:id="colummdesignation" prefWidth="104.0" text="designation" />
+                  <TableColumn fx:id="colummqte" prefWidth="104.0" text="quantite importe" />
+                  <TableColumn fx:id="colummprix" prefWidth="104.0" text="prix unitaire" />
+                  <TableColumn fx:id="colummcategorie" prefWidth="104.0" text="categorie" />
+                  <TableColumn fx:id="colummvaleur" prefWidth="75.0" text="valeur" />
+                  <TableColumn fx:id="columnfournisseur" prefWidth="104.0" text="fournisseur" />
+                  <TableColumn fx:id="colummrayon" prefWidth="104.0" text="rayon" />
+               </columns></javafx.scene.control.TableView>
+            <Label layoutX="38.0" prefHeight="27.0" prefWidth="187.0" stylesheets="@styles.css" text="PRODUIT IMPORTES" textAlignment="JUSTIFY" textFill="#19b5fe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane layoutX="302.0" layoutY="10.0" prefHeight="499.0" prefWidth="413.0" style="-fx-border-color: black; -fx-border-radius: 5px;" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton layoutX="162.0" layoutY="459.0" onAction="#enregistrer" prefHeight="26.0" prefWidth="74.0" styleClass="JFXButton" stylesheets="@styles.css" text="enregistrer" textFill="WHITE" />
+            <AnchorPane layoutX="12.0" layoutY="22.0" prefHeight="40.0" prefWidth="395.0" styleClass="anchorpane" stylesheets="@styles.css">
+               <children>
+                  <Label layoutX="100.0" layoutY="11.0" prefHeight="18.0" prefWidth="216.0" text="enregistrement d'un produit importe" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="11.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="215.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/grossistesadd.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="130.0" layoutY="113.0" prefHeight="294.0" prefWidth="201.0">
+               <children>
+                  <JFXTextField fx:id="code" prefHeight="33.0" prefWidth="201.0" promptText="code">
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="designation" prefHeight="8.0" prefWidth="201.0" promptText="Designation ">
+                     <VBox.margin>
+                        <Insets bottom="14.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="qte_import" prefHeight="6.0" prefWidth="201.0" promptText="Quantite importe">
+                     <VBox.margin>
+                        <Insets bottom="18.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="prix_unit" layoutX="10.0" layoutY="134.0" prefHeight="8.0" prefWidth="201.0" promptText="prix unitaire">
+                     <VBox.margin>
+                        <Insets bottom="7.0" />
+                     </VBox.margin></JFXTextField>
+                  <JFXTextField fx:id="cat" layoutX="10.0" layoutY="191.0" prefHeight="19.0" prefWidth="201.0" promptText="categorie" />
+                  <JFXTextField fx:id="valeur" layoutX="10.0" layoutY="163.0" prefHeight="12.0" prefWidth="201.0" promptText="valeur" />
+                  <JFXComboBox fx:id="rayon" layoutX="10.0" layoutY="207.0" prefHeight="12.0" prefWidth="201.0" promptText="rayon">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="fournisseur" prefHeight="45.0" prefWidth="201.0" promptText="fournisseur" />
+               </children>
+            </VBox>
+            <JFXButton layoutX="265.0" layoutY="460.0" prefHeight="25.0" prefWidth="74.0" styleClass="JFXButton" stylesheets="@styles.css" text="annuler" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

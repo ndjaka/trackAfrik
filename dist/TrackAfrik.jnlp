@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TrackAfrik.jnlp">
+  <information>
+    <title>TrackAfrik</title>
+    <vendor>ndjaka</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TrackAfrik.jar" size="838269" download="eager" />
+    <jar href="lib/MultiScreenFramework.jar" size="10900" download="eager" />
+    <jar href="lib/fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib/jfoenix.jar" size="2206016" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TrackAfrik" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="trackafrik.TrackAfrik"  name="TrackAfrik" />
+  <update check="always"/>
+</jnlp>

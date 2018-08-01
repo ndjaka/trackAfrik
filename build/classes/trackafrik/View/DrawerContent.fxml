@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="441.0" prefWidth="180.0" styleClass="vbox-menu" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trackafrik.controller.DrawerContentController">
+   <children>
+      <ImageView fitHeight="138.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/US.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="id_dashboard" accessibleText="Dashbord" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Dashbord">
+         <graphic>
+            <FontAwesomeIcon glyphName="DASHBOARD" size="1.5em" />
+         </graphic>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="id_profils" accessibleText="profils" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Profils">
+         <graphic>
+            <FontAwesomeIcon glyphName="USERS" size="1.5em" />
+         </graphic>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="id_produits" accessibleText="produits" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="produits">
+         <graphic>
+            <FontAwesomeIcon size="1.5em" />
+         </graphic>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="id_export" accessibleText="export" layoutX="10.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Export">
+         <graphic>
+            <FontAwesomeIcon glyphName="ANGLE_LEFT" size="1.5em" />
+         </graphic>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="id_import" accessibleText="import" layoutX="10.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Import">
+         <graphic>
+            <FontAwesomeIcon glyphName="ANGLE_RIGHT" size="1.5em" />
+         </graphic>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="id_deconnexion" accessibleText="deconnexion" layoutX="10.0" layoutY="135.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Deconnexion">
+         <graphic>
+            <FontAwesomeIcon glyphName="SIGN_OUT" size="1.5em" />
+         </graphic>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

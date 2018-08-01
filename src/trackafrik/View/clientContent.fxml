@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="803.0" styleClass="anchorpane-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trackafrik.controller.ClientContentController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="50.0" prefHeight="476.0" prefWidth="324.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="469.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <javafx.scene.control.TableView fx:id="table_client" layoutX="14.0" layoutY="14.0" prefHeight="516.0" prefWidth="274.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="14.0">
+               <columns>
+                <TableColumn fx:id="columnNom" prefWidth="136.0" text="nom" />
+                  <TableColumn fx:id="columntelephone" prefWidth="136.0" text="telephone" />
+                  <TableColumn fx:id="columnpays" prefWidth="136.0" text="pays" />
+                  <TableColumn fx:id="columnregion" prefWidth="136.0" text="region" />
+                  <TableColumn fx:id="columnemail" prefWidth="136.0" text="email" />
+               </columns></javafx.scene.control.TableView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane layoutX="313.0" layoutY="30.0" prefHeight="506.0" prefWidth="462.0" style="-fx-border-color: black; -fx-border-radius: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <JFXButton layoutX="150.0" layoutY="434.0" onAction="#enregistrer" prefHeight="33.0" prefWidth="86.0" styleClass="JFXButton" stylesheets="@styles.css" text="enregistrer" textFill="WHITE" />
+            <AnchorPane layoutX="12.0" layoutY="22.0" prefHeight="40.0" prefWidth="438.0" styleClass="anchorpane" stylesheets="@styles.css">
+               <children>
+                  <Label layoutX="102.0" layoutY="11.0" prefHeight="18.0" prefWidth="227.0" text="enregistrement d'un client" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="11.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="214.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/clientAdd.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="35.0" layoutY="175.0" prefHeight="173.0" prefWidth="201.0">
+               <children>
+                  <JFXTextField fx:id="nom" prefHeight="33.0" prefWidth="201.0" promptText="nom">
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="telephone" prefHeight="27.0" prefWidth="201.0" promptText="telephone">
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="email" promptText="email">
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <JFXButton layoutX="247.0" layoutY="435.0" prefHeight="32.0" prefWidth="86.0" styleClass="JFXButton" stylesheets="@styles.css" text="annuler" textFill="WHITE" />
+            <VBox layoutX="247.0" layoutY="175.0" prefHeight="173.0" prefWidth="201.0">
+               <children>
+                  <JFXTextField fx:id="pays" prefHeight="33.0" prefWidth="201.0" promptText="pays">
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="region" prefHeight="27.0" prefWidth="201.0" promptText="region">
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="ville" promptText="ville">
+                     <VBox.margin>
+                        <Insets bottom="32.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <JFXTextField fx:id="localite" layoutX="171.0" layoutY="349.0" promptText="localite" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="30.0" prefHeight="27.0" prefWidth="170.0" text="LISTES DES CLIENTS" textFill="#19b5fe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

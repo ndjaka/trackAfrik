@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="542.0" prefWidth="773.0" styleClass="anchorpane-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trackafrik.controller.FXMLSIDEBARController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="56.0" prefWidth="773.0" styleClass="anchorpane" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="337.0" layoutY="16.0" prefHeight="21.0" prefWidth="109.0" text="TrackAfrik" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="337.0" AnchorPane.rightAnchor="327.0" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="19.0" opacity="0.8" prefHeight="19.0" prefWidth="25.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="19.0" />
+         </children>
+      </AnchorPane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" layoutY="56.0" prefHeight="441.0" prefWidth="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="56.0" />
+      <AnchorPane fx:id="WrapperAnchorpane" layoutX="180.0" layoutY="55.0" prefHeight="486.0" prefWidth="593.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+   </children>
+</AnchorPane>

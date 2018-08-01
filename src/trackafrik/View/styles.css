@@ -1,0 +1,19 @@
+.anchorpane{
+    -fx-background-color:  #19B5FE;
+}
+.anchorpane-background{
+    -fx-background-color: white;
+}
+.vbox-menu{
+    -fx-background-color: #ECF0F1;
+}
+.JFXButton {
+    -fx-background-color:  #19B5FE;
+}
+.text{
+    -fx-background-color: white;
+}
+
+.jfx-text-field.text{
+     -fx-background-color: white;
+}

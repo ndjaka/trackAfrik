@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trackafrik.controller.ProduitContentController">
+   <children>
+      <VBox prefHeight="580.0" prefWidth="748.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <javafx.scene.control.TableView fx:id="treeview" prefHeight="514.0" prefWidth="727.0" style="-fx-border-color: black;">
+               <VBox.margin>
+                  <Insets left="6.0" right="6.0" top="12.0" />
+               </VBox.margin>
+               <columns>
+                  <TableColumn fx:id="code" editable="false" prefWidth="123.0" text="code" />
+                  <TableColumn fx:id="designation" editable="false" prefWidth="91.0" text="designation" />
+                  <TableColumn fx:id="qte_stock" editable="false" prefWidth="111.0" text="quantite en stock" />
+                  <TableColumn fx:id="prix_unit" editable="false" prefWidth="150.0" text="prix unitaire" />
+                  <TableColumn fx:id="rayon" editable="false" minWidth="0.0" prefWidth="142.0" text="rayon" />
+                  <TableColumn fx:id="categorie" editable="false" maxWidth="1.7976931348623157E308" prefWidth="142.0" resizable="false" text="categorie" />
+                  <TableColumn fx:id="columnvaleur" editable="false" maxWidth="1.7976931348623157E308" prefWidth="142.0" resizable="false" text="valeur" />
+               </columns>
+            </javafx.scene.control.TableView>
+            <HBox prefHeight="39.0" prefWidth="336.0">
+               <VBox.margin>
+                  <Insets left="600.0" right="5.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton onAction="#supprimer" styleClass="JFXButton" stylesheets="@styles.css" text="supprimer" />
+                  <JFXButton fx:id="imprimer" layoutX="10.0" layoutY="10.0" styleClass="JFXButton" stylesheets="@styles.css" text="imprimer">
+                     <HBox.margin>
+                        <Insets left="23.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="52.0" layoutY="8.0" prefHeight="27.0" prefWidth="184.0" text="PRODUIT EN STOCK" textFill="#19b5fe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
